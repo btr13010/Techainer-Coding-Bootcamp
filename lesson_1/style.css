@@ -1,42 +1,105 @@
 .header_section{
     background-color: aliceblue;
-    border-color: darkgray;
-    border-width: 2px;
-    border-style: solid;
+    height: 50px;
+    border-color: gray;
+    border-width: 1px;
+    border-style: none none solid none;
+    display: flex;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
 }
 
-.search{
+h1 {
+    height: 20px;
+    margin-top: 5px;
+    margin-left: 2%;
+}
 
+input{
+    height: 30px;
+    width: 200px;
+    border-width: 0px;
+    background-color: whitesmoke;
+    margin-top: 5px;
+    margin-left: 30%;
 }
 
 .avt{
-
+    position: relative;
+    width: 50px;
+    height: 50px;
+    margin-right: 2%;
+    margin-left: auto;
+    border-radius: 50%;
 }
 
 .story_section{
+    margin: 15px 20% 15px 20%;
+    display: flex;
+    height: auto;
+    border-color: gray;
+    border-width: 1px;
+    border-radius: 10px;
+    border-style: solid;
 
 }
 
 .story{
-
+    margin-left: 20px;
 }
 
 .str_img{
-
+    width: 70px;
+    border-radius: 50%;
+    border-width: 2px;
+    border-color: red;
+    border-style: solid;
+    padding: 2px;
+    margin: 20px 0px -10px 0px;
 }
 
 .feed{
-
+    background-color: azure;
+    margin-top: 70px;
 }
 
 .post{
+    margin: 0px 20% 15px 20%;
+    height: auto;
+    border-color: gray;
+    border-width: 1px;
+    border-radius: 10px;
+    border-style: solid;
+}
 
+.post_head{
+    display: flex;
+    height: 70px;
 }
 
 .logo{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border-width: 2px;
+    border-color: red;
+    border-style: solid;
+    padding: 2px;
+    margin: 10px;
+}
 
+.name {
+    padding-top: 25px;
+    font-size: 1.2em;
 }
 
 .post_img{
+    width: 100%;
+    margin-bottom: 0px;
+}
 
+.content{
+    margin: 15px;
 }
