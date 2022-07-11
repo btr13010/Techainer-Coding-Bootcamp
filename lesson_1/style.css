@@ -33,7 +33,6 @@ body{
     background-position: 10px 10px;
     padding-left: 40px;
     padding-top: 6px;
-    padding-right: 30px;
     background-repeat: no-repeat;
     font-size: large;
 }
@@ -50,8 +49,8 @@ body{
     width: 30px;
     height: 30px;
     margin-top: 15px;
-    margin-right: auto;
-    margin-left: 6%;
+    margin-right: 21%;
+    margin-left: auto;
     border-radius: 50%;
     object-fit: cover;
 }
@@ -306,6 +305,9 @@ body{
         display: none;
     }
     .insta{
-        margin-left: 0px;
+        margin-left: 10px;
+    }
+    .avt{
+        margin-right: 5px;;
     }
 }
