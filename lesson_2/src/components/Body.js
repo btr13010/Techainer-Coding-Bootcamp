@@ -138,7 +138,7 @@ function Body() {
                 </div>
                 <p class="age">2 days ago</p>
                 <div class="comment">
-                    <img src={comment} class="comment_icon"/>
+                    <img src={comment} alt="comment icon" class="comment_icon"/>
                     <input placeholder="Add comment..." type="text" class="comment_text"/>
                     <button class="post_button">Post</button>
                 </div>
