@@ -5,7 +5,7 @@ export default function Tasks(props) {
     <div>
       {props.tasks.map((task) => {
         return(
-          <Task task={task}/>
+          <Task key={task.id} task={task}/>
         )
       })}
     </div>
