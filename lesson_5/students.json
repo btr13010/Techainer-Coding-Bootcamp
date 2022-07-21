@@ -1,0 +1,62 @@
+[
+  {
+    "maSV": "V01",
+    "tenSV": "Nguyen Van A",
+    "tuoi": 20,
+    "gioiTinh": "nam",
+    "ngaySinh": "01/01/2002",
+    "diemToan": 8,
+    "diemLy": 6,
+    "diemHoa": 4,
+    "diemAnh": 6,
+    "lop": "MATH"
+  },
+  {
+    "maSV": "V02",
+    "tenSV": "Nguyen Van B",
+    "tuoi": 20,
+    "gioiTinh": "nam",
+    "ngaySinh": "01/02/2002",
+    "diemToan": 9,
+    "diemLy": 9,
+    "diemHoa": 7,
+    "diemAnh": 7,
+    "lop": "PHYS"
+  },
+  {
+    "maSV": "V03",
+    "tenSV": "Nguyen Thi C",
+    "tuoi": 20,
+    "gioiTinh": "nu",
+    "ngaySinh": "01/03/2002",
+    "diemToan": 8,
+    "diemLy": 8,
+    "diemHoa": 9,
+    "diemAnh": 9,
+    "lop": "CHEM"
+  },
+  {
+    "maSV": "V04",
+    "tenSV": "Nguyen Thi D",
+    "tuoi": 20,
+    "gioiTinh": "nu",
+    "ngaySinh": "01/04/2002",
+    "diemToan": 3,
+    "diemLy": 3,
+    "diemHoa": 2,
+    "diemAnh": 2,
+    "lop": "ENG"
+  },
+  {
+    "maSV": "V05",
+    "tenSV": "Nguyen Van E",
+    "tuoi": 20,
+    "gioiTinh": "nam",
+    "ngaySinh": "01/05/2002",
+    "diemToan": 9,
+    "diemLy": 7,
+    "diemHoa": 7,
+    "diemAnh": 8,
+    "lop": "MATH"
+  }
+]
