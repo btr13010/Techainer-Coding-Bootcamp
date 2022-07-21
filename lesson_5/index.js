@@ -1,3 +1,4 @@
+const { strictEqual } = require("assert");
 const fs = require("fs");
 
 class DataLoader {
@@ -69,7 +70,7 @@ class Calculation {
     })
   }
 
-  courseStudent(course) {
+  courseFilter(course) {
     let students = [];
     this.studentList.forEach((student) => {
       if (student.lop === course) {
@@ -81,7 +82,7 @@ class Calculation {
 
   highestGPA(course) {
     if (this.courseList.includes(course)) {
-      const students = this.courseStudent(course);
+      const students = this.courseFilter(course);
       let highest = 0.00;
       let person = '';
       students.forEach((student) => {
@@ -98,7 +99,7 @@ class Calculation {
 
   lowestGPA(course) {
     if (this.courseList.includes(course)) {
-      const students = this.courseStudent(course);
+      const students = this.courseFilter(course);
       let lowest = 10.00;
       let person = '';
       students.forEach((student) => {
@@ -134,6 +135,36 @@ class Calculation {
     this.studentList.forEach((student) => {
       console.log(`Diem chu cua sinh vien ${student.tenSV}: ${student.letterGrade()}`)
     })
+  }
+
+  nameFilter(name) {
+    let result = [];
+    studentList.forEach((student) => {
+      if (student.tenSV === name) {
+        result.push(student);
+      }
+    })
+    return result;
+  }
+
+  ageFilter(age) {
+    let result = [];
+    studentList.forEach((student) => {
+      if (student.tuoi >= age) {
+        result.push(student);
+      }
+    })
+    return result;
+  }
+
+  gpaFilter(threshold) {
+    let result = [];
+    studentList.forEach((student) => {
+      if (student.gpa >= threshold) {
+        result.push(student);
+      }
+    })
+    return result;
   }
 }
 
