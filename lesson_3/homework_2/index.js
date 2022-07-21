@@ -54,14 +54,58 @@ data.forEach((item) => {
   studentList.push( new Student(item.maSV, item.tenSV, item.tuoi, item.gioiTinh, item.ngaySinh, item.diemToan, item.diemLy, item.diemHoa, item.diemAnh, item.lop) );
 })
 
-function gpa() {
+function studentInfo() {
+  let passed = [];
+  studentList.forEach((student) => {
+    console.log(`Diem trung binh mon cua ${student.tenSV}: ${student.gpa}`);
+    console.log(`Diem chu cua ${student.tenSV}: ${student.letterGrade()}`);
+    if (student.passingCheck()) {
+      passed.push(student.tenSV);
+    }
+  })
+  console.log(`Cac sinh vien qua mon: ${passed}`);
+}
 
+function courseStudent(course) {
+  let students = [];
+  studentList.forEach((student) => {
+    if (student.lop === course) {
+      students.push(student);
+    }
+  })
+  return students
 }
 
 function highestGPA() {
-
+  courseList.forEach((course) => {
+    const students = courseStudent(course);
+    let highest = 0.00;
+    let person = '';
+    students.forEach((student) => {
+      if (student.gpa > highest) {
+        highest = student.gpa;
+        person = student.tenSV;
+      }
+    })
+    console.log(`Sinh vien co diem cao nhat mon ${course}: ${person}`);
+  })
 }
 
 function lowestGPA() {
-
+  courseList.forEach((course) => {
+    const students = courseStudent(course);
+    let lowest = 10.00;
+    let person = '';
+    students.forEach((student) => {
+      if (student.gpa < lowest) {
+        highest = student.gpa;
+        person = student.tenSV;
+      }
+    })
+    console.log(`Sinh vien co diem thap nhat mon ${course}: ${person}`);
+  })
 }
+
+studentInfo();
+highestGPA();
+lowestGPA();
