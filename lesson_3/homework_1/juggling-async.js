@@ -1,4 +1,4 @@
-const urls = process.argv.slice(2);
+const urls = process.argv.slice(2,5);
 const http = require('http');
 const bl = require('bl');
 let result = [];
