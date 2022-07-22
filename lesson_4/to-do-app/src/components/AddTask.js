@@ -3,16 +3,20 @@ import { useState } from 'react';
 function AddTask(props) {
   const [text, setText] = useState('');
   const [time, setTime] = useState('');
-  const [reminder, setReminder] = useState(true);
+  const [reminder, setReminder] = useState(false);
   
   // Handle submit event
   const handleSubmit = (e) => {
     e.preventDefault();
-    props.onAdd('abc');
     if (!text) {
       alert("Please enter a text")
       return
     }
+    props.onAdd({text, time, reminder})
+
+    setText("")
+    setTime("")
+    setReminder(false)
   }
 
   return (

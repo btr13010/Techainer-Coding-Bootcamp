@@ -42,6 +42,22 @@ function App() {
     setListTasks([...listTasks, newTask]);
   }
 
+  const deleteTask = (id) => {
+    setListTasks(listTasks.filter((task) => task.id !== id));
+  }
+
+  const toggleReminder = (id) => {
+    setListTasks(
+      listTasks.map((task) => {
+        if (task.id === id) {
+          return {...task, reminder: !task.reminder}
+        } else {
+          return task
+        }
+      })
+    );
+  }
+
   return (
     <BrowserRouter>
       <div className="container">
@@ -50,7 +66,7 @@ function App() {
           <Route path='/' element={
             <>
               <AddTask onAdd={addTask}/>
-              <Tasks tasks={listTasks}/>
+              <Tasks tasks={listTasks} onDelete={deleteTask} onToggle={toggleReminder}/>
               <Link to='/about'>About page</Link>
             </>
           }>
